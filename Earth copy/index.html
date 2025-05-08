@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheshire Handyman Pros | Local Handyman Services in Cheshire</title>
+    <meta name="description" content="Trusted handyman services across Cheshire. From plumbing to carpentry, our skilled professionals handle all home repairs and improvements. Same-day service available!">
+    <meta name="keywords" content="handyman Cheshire, home repairs Cheshire, local handyman, plumbing services Cheshire, electrical repairs Cheshire, carpentry Cheshire, home maintenance Cheshire, drywall repair Cheshire">
+    <meta name="author" content="Cheshire Handyman Pros">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cheshirehandymanpros.com">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Cheshire Handyman Pros | Local Handyman Services in Cheshire">
+    <meta property="og:description" content="Trusted handyman services across Cheshire. Same-day service available for all your home repair needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cheshirehandymanpros.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom Styles */
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #f59e0b;
+            margin-top: 2px;
+        }
+        .step-card {
+            border-left: 4px solid #f59e0b;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion.active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-toggle:after {
+            content: '+';
+            float: right;
+            font-weight: bold;
+        }
+        .accordion.active .accordion-toggle:after {
+            content: '-';
+        }
+        .testimonial-slide {
+            display: none;
+        }
+        .testimonial-slide.active {
+            display: block;
+        }
+        footer a:hover {
+            color: #f59e0b;
+            transform: translateX(3px);
+        }
+        .before-after-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .before-after-slider {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            overflow: hidden;
+        }
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: white;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: ew-resize;
+        }
+        .slider-handle:after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-tools text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">Cheshire<span class="text-amber-500">HandymanPros</span></span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-amber-500 font-medium scroll-smooth">Home</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-amber-500 font-medium scroll-smooth">Services</a>
+                <a href="#why-choose-us" class="nav-link text-gray-700 hover:text-amber-500 font-medium scroll-smooth">Why Choose Us</a>
+                <a href="#pricing" class="nav-link text-gray-700 hover:text-amber-500 font-medium scroll-smooth">Pricing</a>
+                <a href="#testimonials" class="nav-link text-gray-700 hover:text-amber-500 font-medium scroll-smooth">Reviews</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-amber-500 font-medium scroll-smooth">Contact</a>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-amber-500 scroll-smooth">Home</a>
+            <a href="#services" class="block py-2 text-gray-700 hover:text-amber-500 scroll-smooth">Services</a>
+            <a href="#why-choose-us" class="block py-2 text-gray-700 hover:text-amber-500 scroll-smooth">Why Choose Us</a>
+            <a href="#pricing" class="block py-2 text-gray-700 hover:text-amber-500 scroll-smooth">Pricing</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-amber-500 scroll-smooth">Reviews</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-amber-500 scroll-smooth">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Reliable Handyman Services in <span class="text-amber-400">Cheshire</span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Same-day service for all your home repairs and improvements. No job too small!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 scroll-smooth">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+                <a href="#pricing" class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300 scroll-smooth">
+                    <i class="fas fa-pound-sign mr-2"></i> See Pricing
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#services" class="text-white animate-bounce scroll-smooth">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <div class="flex items-center">
+                    <i class="fas fa-medal text-amber-500 text-3xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">15+ Years</div>
+                        <div class="text-gray-600">Experience</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-amber-500 text-3xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">2500+</div>
+                        <div class="text-gray-600">Jobs Completed</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-thumbs-up text-amber-500 text-3xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">98%</div>
+                        <div class="text-gray-600">Satisfaction Rate</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-clock text-amber-500 text-3xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">Same Day</div>
+                        <div class="text-gray-600">Service Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Comprehensive <span class="text-amber-500">Handyman Services</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From small repairs to major home improvements, we handle it all across Cheshire.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1: Plumbing -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-faucet text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Plumbing Services</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Leaky faucet repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Pipe repairs & replacement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Toilet installation & repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Drain unclogging</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Water heater maintenance</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Category 2: Electrical -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bolt text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Electrical Services</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Light fixture installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Outlet & switch repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Ceiling fan installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Circuit breaker troubleshooting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Home safety inspections</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Category 3: Carpentry -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-hammer text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Carpentry & Woodwork</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Door installation & repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Cabinetry & shelving</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Baseboard & trim installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Deck & fence repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Custom furniture assembly</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Category 4: Drywall & Painting -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-paint-roller text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Drywall & Painting</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Drywall repair & patching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Wall texture matching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Interior/exterior painting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Power washing services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Wallpaper removal</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- More Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                <!-- Category 5: Flooring -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-layer-group text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Flooring Services</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Tile installation & repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Hardwood flooring repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Laminate installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Carpet repair & stretching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Subfloor repairs</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Category 6: General Repairs -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-tools text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">General Repairs</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Furniture assembly</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>TV mounting & installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Mirror & picture hanging</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Window treatments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Screen & door repair</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Category 7: Bathrooms -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bath text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Bathroom Services</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Shower & tub repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Grout & caulking repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Vanity installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Bathroom fixture upgrades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Grab bar installation</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Category 8: Outdoor -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-tree text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Outdoor Services</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Gutter cleaning & repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Deck & patio repair</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Fence repair & gates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Outdoor lighting installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                            <span>Shed & small building repair</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- More Services Button -->
+            <div class="text-center mt-12">
+                <button id="show-more-services" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 flex items-center mx-auto">
+                    <i class="fas fa-plus-circle mr-2"></i> Load More Services
+                </button>
+            </div>
+            
+            <!-- Additional Services (Hidden by default) -->
+            <div id="more-services" class="hidden mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Category 9: Kitchen -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-utensils text-amber-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Kitchen Services</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Cabinet repair & refacing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Countertop replacement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Backsplash installation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Appliance installation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Pot rack installation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Category 10: Cleaning -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-broom text-amber-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Cleaning Services</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Post-construction cleanup</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Window cleaning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Deep cleaning services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Pressure washing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt=1 mr-2"></i>
+                                <span>Garage & shed cleaning</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Category 11: Emergency -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-exclamation-triangle text-amber-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Emergency Repairs</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr=2"></i>
+                                <span>Water damage mitigation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr=2"></i>
+                                <span>Broken window boarding</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr=2"></i>
+                                <span>Emergency plumbing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr=2"></i>
+                                <span>Storm damage repair</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr=2"></i>
+                                <span>24/7 on-call service</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Category 12: Miscellaneous -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm service-card transition duration-300">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-ellipsis-h text-amber-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Miscellaneous</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Smart home installation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Baby-proofing services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Moving preparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Demolition services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>And much more!</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Not Sure Section -->
+            <div class="mt-16 bg-amber-50 rounded-lg p-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Not Sure What Service You Need?</h3>
+                    <p class="text-gray-600">Many home repair projects require multiple skill sets. Our team of multi-talented professionals can assess your needs and handle all aspects of your project.</p>
+                </div>
+                <div class="md:w-1/3 flex justify-center md:justify-end">
+                    <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 scroll-smooth">
+                        <i class="fas fa-question-circle mr-2"></i> Ask Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose <span class="text-amber-500">Cheshire Handyman Pros</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We stand out from other handyman services in the Cheshire area</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-star text-amber-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Quality Workmanship</h3>
+                    <p class="text-gray-600">We take pride in every job we complete, ensuring attention to detail and superior results.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="w=20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-user-tie text-amber-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Professional Team</h3>
+                    <p class="text-gray-600">All our handymen are background-checked, insured, and highly experienced.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="w=20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb=6 mx-auto">
+                        <i class="fas fa-calendar-check text-amber-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">On-Time Service</h3>
+                    <p class="text-gray-600">We value your time and always arrive when promised, completing projects efficiently.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="w=20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb=6 mx-auto">
+                        <i class="fas fa-lock text-amber-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">No Hidden Fees</h3>
+                    <p class="text-gray-600">Transparent pricing with no surprises. You'll know the cost before we begin.</p>
+                </div>
+            </div>
+            
+            <!-- Process Steps -->
+            <div class="mt-20">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12">Our Simple <span class="text-amber-500">Process</span></h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="step-card bg-white p-6 pl-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
+                            <h3 class="text-xl font-bold text-gray-800">Contact Us</h3>
+                        </div>
+                        <p class="text-gray-600">Call, email, or use our online form to describe your project needs.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-card bg-white p-6 pl-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">2</div>
+                            <h3 class="text-xl font-bold text-gray-800">Get a Quote</h3>
+                        </div>
+                        <p class="text-gray-600">We'll provide a transparent, no-obligation estimate.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="stepCard bg-white p-6 pl-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">3</div>
+                            <h3 class="text-xl font-bold text-gray-800">Schedule Service</h3>
+                        </div>
+                        <p class="text-gray-600">Choose a convenient date and time for our visit.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="step-card bg-white p-6 pl-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb=4">
+                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">4</div>
+                            <h3 class="text-xl font-bold text-gray-800">Enjoy Results</h3>
+                        </div>
+                        <p class="text-gray-600">We'll complete your project to your complete satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb=4">Transparent <span class="text-amber-500">Pricing</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">No hidden fees - know exactly what to expect</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Package 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="bg-amber-500 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Small Jobs</h3>
+                        <p class="text-amber-100">Quick fixes and minor repairs</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold mb-4">£45<span class="text-lg text-gray-500">/hour</span></div>
+                        <ul class="text-gray-600 space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>1-hour minimum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Simple repairs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>No project too small</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Pay only for time worked</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 scroll-smooth">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform scale-105 z-10 border-2 border-amber-400">
+                    <div class="bg-amber-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Half Day</h3>
+                        <p class="text-amber-100">Popular for medium projects</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold mb-4">£150<span class="text-lg text-gray-500">/4 hours</span></div>
+                        <ul class="text-gray-600 space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Save 15% vs hourly</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Most common package</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Perfect for minor remodels</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Multiple small tasks</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px=6 rounded-lg transition duration-300 scroll-smooth">
+                            Best Value
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="bg-amber-500 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Full Day</h3>
+                        <p class="text-amber-100">Major projects and overhauls</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold mb-4">£280<span class="text-lg text-gray-500">/8 hours</span></div>
+                        <ul class="text-gray-600 space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr=2"></i>
+                                <span>Save 20% vs hourly</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Complete room makeovers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Multiple day discounts</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                <span>Materials available</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 scroll-smooth">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Pricing Info -->
+            <div class="mt-16 max-w-4xl mx-auto bg-amber-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Flexible <span class="text-amber-500">Service Options</span></h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-tape text-amber-500 mr-2"></i> Fixed Price Projects
+                        </h4>
+                        <p class="text-gray-600">For well-defined projects, we offer fixed pricing so you know exactly what to budget.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-clipboard-check text-amber-500 mr-2"></i> Project Estimates
+                        </h4>
+                        <p class="text-gray-600">For larger jobs, we provide detailed estimates after assessing your needs.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-percentage text-amber-500 mr-2"></i> Senior Discounts
+                        </h4>
+                        <p class="text-gray-600">We offer special pricing for seniors and veterans - just ask!</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-file-invoice-dollar text-amber-500 mr-2"></i> Itemized Receipts
+                        </h4>
+                        <p class="text-gray-600">Detailed invoices showing exactly where your money is spent.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emergency Pricing -->
+            <div class="mt-12 bg-white border border-gray-200 rounded-lg shadow p-8 max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">
+                    <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i> Emergency Service Rates
+                </h3>
+                <p class="text-gray-600 text-center mb-4">After-hours emergency service available for critical repairs (additional charges apply):</p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="text-center">
+                        <div class="text-amber-500 font-bold text-lg">Weekdays (6PM-10PM)</div>
+                        <div class="text-2xl font-bold">£65/hr</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-amber-500 font-bold text-lg">Weekends & Holidays</div>
+                        <div class="text-2xl font-bold">£85/hr</div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-500 text-center mt-6">* Minimum 2-hour charge for emergency service. Available only for urgent situations like water leaks, electrical hazards, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our <span class="text-amber-500">Clients Say</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from satisfied customers across Cheshire</p>
+            </div>
+            
+            <!-- Testimonial Slider -->
+            <div class="max-w-4xl mx-auto">
+                <div class="testimonial-slide active">
+                    <div class="bg-white p-8 rounded-xl shadow-sm mb-8">
+                        <div class="flex items-start mb-6">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah J." class="w-16 h-16 rounded-full object-cover mr-6">
+                            <div>
+                                <div class="flex items-center mb-1">
+                                    <span class="text-lg font-bold mr-2">Sarah J.</span>
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-gray-500 text-sm block">Wilmslow • Kitchen Renovation</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"The team transformed our outdated kitchen into a modern masterpiece. They handled everything from demolition to installing new cabinets, countertops, and appliances. The attention to detail was incredible, and they finished ahead of schedule. Will definitely use them again for our bathroom project next year!"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="bg-white p-8 rounded-xl shadow-sm mb-8">
+                        <div class="flex items-start mb-6">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark T." class="w-16 h-16 rounded-full object-cover mr-6">
+                            <div>
+                                <div class="flex items-center mb-1">
+                                    <span class="text-lg font-bold mr-2">Mark T.</span>
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-gray-500 text-sm block">Alderley Edge • Emergency Plumbing</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"Called at 9pm on a Sunday night when a pipe burst in our basement. Cheshire Handyman Pros had someone here within 45 minutes who fixed the issue immediately. The plumber was professional, cleaned up the water properly, and even gave us advice on preventing future issues. Outstanding emergency service!"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="bg-white p-8 rounded-xl shadow-sm mb-8">
+                        <div class="flex items-start mb-6">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K." class="w-16 h-16 rounded-full object-cover mr-6">
+                            <div>
+                                <div class="flex items-center mb-1">
+                                    <span class="text-lg font-bold mr-2">Priya K.</span>
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-gray-500 text-sm block">Knutsford • Bathroom Remodel</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"Our bathroom was stuck in the 1970s until Cheshire Handyman Pros worked their magic. They did everything from plumbing to tiling to installing the beautiful new vanity. The team was respectful of our home, always cleaned up at the end of the day, and delivered exactly what we wanted. Will recommend to all our neighbors!"</p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center space-x-2 mt-6">
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-amber-500 focus:outline-none" data-slide="0"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none" data-slide="1"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none" data-slide="2"></button>
+                </div>
+            </div>
+            
+            <!-- Trustpilot Badge Section -->
+            <div class="mt-16 bg-white rounded-lg shadow p-8 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="mb-6 md:mb-0 md:mr-8">
+                        <div class="flex items-center">
+                            <div class="flex text-amber-400 text-3xl mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-800 font-bold text-lg">4.9/5</span>
+                        </div>
+                        <div class="text-gray-600">Based on 184 reviews</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Rated Excellent on Trustpilot</h3>
+                        <p class="text-gray-600">We're proud of our reputation for quality service and customer satisfaction. Read all our reviews or leave your own!</p>
+                        <a href="#" class="inline-block mt-4 text-amber-500 hover:text-amber-600 font-medium">
+                            View All Reviews <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Gallery -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Before & After <span class="text-amber-500">Gallery</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See the transformations we've created for Cheshire homeowners</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Kitchen Remodel - Wilmslow</h3>
+                    <div class="relative before-after-container h-64 rounded-lg overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1600545435775-b8c2612f6e1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Kitchen before remodel" class="w-full h-full object-cover">
+                        <div class="before-after-slider">
+                            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" alt="Kitchen after remodel" class="w-full h-full object-cover">
+                            <div class="slider-handle"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Bathroom Renovation - Alderley Edge</h3>
+                    <div class="relative before-after-container h-64 rounded-lg overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bathroom before remodel" class="w-full h-full object-cover">
+                        <div class="before-after-slider">
+                            <img src="https://images.unsplash.com/photo-1600566752336-0a4d0d054767?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bathroom after remodel" class="w-full h-full object-cover">
+                            <div class="slider-handle"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Deck Repair - Knutsford</h3>
+                    <div class="relative before-after-container h-64 rounded-lg overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1622372949650-f0a0eab8c413?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deck before repair" class="w-full h-full object-cover">
+                        <div class="before-after-slider">
+                            <img src="https://images.unsplash.com/photo-1600566752229-250ed79470c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deck after repair" class="w-full h-full object-cover">
+                            <div class="slider-handle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    <i class="fas fa-images mr-2"></i> View More Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Frequently Asked <span class="text-amber-500">Questions</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Answers to common questions about our handyman services</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="accordion bg-white rounded-lg shadow-sm overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 font-bold text-lg text-gray-800 hover:text-amber-500 focus:outline-none flex justify-between items-center">
+                        What areas of Cheshire do you serve?
+                    </button>
+                    <div class="accordion-content px-6 pb-4 text-gray-600">
+                        <p>We provide handyman services throughout Cheshire, including but not limited to: Wilmslow, Alderley Edge, Knutsford, Macclesfield, Chester, Crewe, Nantwich, Northwich, and surrounding areas. There's no additional travel charge for these locations. For areas further out, we may apply a small mileage fee.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="accordion bg-white rounded-lg shadow-sm overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 font-bold text-lg text-gray-800 hover:text-amber-500 focus:outline-none flex justify-between items-center">
+                        How quickly can you come out for repairs?
+                    </button>
+                    <div class="accordion-content px-6 pb-4 text-gray-600">
+                        <p>For standard service requests, we can typically schedule an appointment within 1-3 business days. We also offer same-day service for urgent repairs (additional charges apply). Emergency services are available 24/7 for situations like water leaks, electrical hazards, or other critical issues.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="accordion bg-white rounded-lg shadow-sm overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 font-bold text-lg text-gray-800 hover:text-amber-500 focus:outline-none flex justify-between items-center">
+                        Do you provide the materials for jobs?
+                    </button>
+                    <div class="accordion-content px-6 pb-4 text-gray-600">
+                        <p>We're happy to work either way. Many clients prefer to purchase their own materials to get exactly what they want. We can provide guidance on quantities and specifications. Alternatively, we can source and supply all necessary materials for a small procurement fee (typically 10-15% of material costs).</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="accordion bg-white rounded-lg shadow-sm overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 font-bold text-lg text-gray-800 hover:text-amber-500 focus:outline-none flex justify-between items-center">
+                        Are your handymen qualified and insured?
+                    </button>
+                    <div class="accordion-content px-6 pb-4 text-gray-600">
+                        <p>Absolutely. All our technicians are fully qualified for their trade specialties, background-checked, and fully insured with both public liability and employer's liability coverage. We never use subcontractors - everyone on our team is directly employed and trained by Cheshire Handyman Pros.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="accordion bg-white rounded-lg shadow-sm overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 font-bold text-lg text-gray-800 hover:text-amber-500 focus:outline-none flex justify-between items-center">
+                        What payment methods do you accept?
+                    </button>
+                    <div class="accordion-content px-6 pb-4 text-gray-600">
+                        <p>We accept all major credit/debit cards (Visa, MasterCard, American Express), bank transfers, and cash. Payment is due upon completion of work unless prior arrangements have been made for larger projects. We provide detailed invoices with all work for your records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Cheshire <span class="text-amber-500">Handyman Pros</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ready to tackle your home repair project? Get in touch today!</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="lg:w-2/3">
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" required>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500">
+                                    <option value="">Select a service</option>
+                                    <option value="plumbing">Plumbing</option>
+                                    <option value="electrical">Electrical</option>
+                                    <option value="carpentry">Carpentry</option>
+                                    <option value="painting">Painting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="Describe your project including any specific requirements..."></textarea>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-6 rounded-lg transition duration-300">
+                                Get Your Free Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="lg:w-1/3">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">How to Reach Us</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-500 text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Our Location</h4>
+                                    <p class="text-gray-600">15 Handyman Way, Wilmslow, Cheshire SK9 1AB</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-500 text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Call Us</h4>
+                                    <a href="tel:+441625123456" class="text-gray-600 hover:text-amber-500">01625 123456</a>
+                                    <p class="text-sm text-gray-500 mt-1">24/7 for emergencies</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-500 text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email Us</h4>
+                                    <a href="mailto:info@cheshirehandymanpros.com" class="text-gray-600 hover:text-amber-500">info@cheshirehandymanpros.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-500 text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Emergency: 24/7</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-6 border-t border-gray-200">
+                                <h4 class="font-bold text-gray-800 mb-4">Connect With Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700 hover:bg-amber-500 hover:text-white transition duration-300">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700 hover:bg-amber-500 hover:text-white transition duration-300">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700 hover:bg-amber-500 hover:text-white transition duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700 hover:bg-amber-500 hover:text-white transition duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Map -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-amber-500">Service Area</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Proudly serving Cheshire and surrounding areas</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow p-6">
+                <!-- Placeholder for actual map integration -->
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+                    <i class="fas fa-map-marked-alt text-4xl text-gray-400"></i>
+                </div>
+                
+                <!-- Towns Served -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Major Towns We Serve</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <div class="bg-amber-50 py-3 rounded-lg font-medium">Wilmslow</div>
+                        <div class="bg-amber-50 py-3 rounded-lg font-medium">Alderley Edge</div>
+                        <div class="bg-amber-50 py-3 rounded-lg font-medium">Knutsford</div>
+                        <div class="bg-amber-50 py-3 rounded-lg font-medium">Macclesfield</div>
+                        <div class="bg-amber-50 py-3 rounded-lg font-medium">Chester</div>
+                        <div class="bg-amber-50 py=3 rounded-lg font-medium">Crewe</div>
+                        <div class="bg-amber-50 py=3 rounded-lg font-medium">Nantwich</div>
+                        <div class="bg-amber-50 py=3 rounded-lg font-medium">Northwich</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-amber-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Tackle Your <span class="text-amber-100">Home Repairs</span>?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Whether it's a small fix or a major project, we've got you covered. Contact us today for a free, no-obligation quote.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+441625123456" class="bg-white hover:bg-gray-100 text-amber-600 font-bold py-4 px-8 rounded-full transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+                <a href="#contact" class="bg-transparent hover:bg-amber-700 text-white font-bold py-4 px-8 border-2 border-white rounded-full transition duration-300 scroll-smooth">
+                    Get a Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- About -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-tools text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">Cheshire<span class="text-amber-400">HandymanPros</span></span>
+                    </div>
+                    <p class="mb-4">Your trusted local handyman service for all home repairs and improvement projects throughout Cheshire.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-amber-400 hover:text-amber-300 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-amber-400 hover:text-amber-300 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-amber-400 hover:text-amber-300 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-amber-400 hover:text-amber-300 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#home" class="footer-link flex items-center hover:text-amber-400 transition duration-300 scroll-smooth">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" class="footer-link flex items-center hover:text-amber-400 transition duration-300 scroll-smooth">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pricing" class="footer-link flex items-center hover:text-amber-400 transition duration-300 scroll-smooth">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="footer-link flex items-center hover:text-amber-400 transition duration-300 scroll-smooth">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer-link flex items-center hover:text-amber-400 transition duration-300 scroll-smooth">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="footer-link flex items-center hover:text-amber-400 transition duration-300">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Plumbing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link flex items-center hover:text-amber-400 transition duration-300">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Electrical
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link flex items-center hover:text-amber-400 transition duration-300">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Carpentry
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link flex items-center hover:text-amber-400 transition duration-300">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Painting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link flex items-center hover:text-amber-400 transition duration-300">
+                                <i class="fas fa-chevron-right text-xs mr=2"></i> All Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-400 mt-1 mr-3"></i>
+                            <span>15 Handyman Way, Wilmslow, Cheshire SK9 1AB</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-amber-400 mt-1 mr-3"></i>
+                            <span>
+                                <a href="tel:+441625123456" class="hover:text-amber-400">01625 123456</a>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-amber-400 mt-1 mr-3"></i>
+                            <span>
+                                <a href="mailto:info@cheshirehandymanpros.com" class="hover:text-amber-400">info@cheshirehandymanpros.com</a>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-amber-400 mt-1 mr-3"></i>
+                            <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM<br>Emergency: 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; 2023 Cheshire Handyman Pros. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-amber-400">Privacy Policy</a>
+                        <a href="#" class="hover:text=amber-400">Terms of Service</a>
+                        <a href="#" class="hover:text=amber-400">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Accordion Functionality
+        document.querySelectorAll('.accordion-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordion = button.closest('.accordion');
+                accordion.classList.toggle('active');
+            });
+        });
+        
+        // Testimonial Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('bg-amber-500'));
+            dots.forEach(dot => dot.classList.add('bg-gray-300'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.remove('bg-gray-300');
+            dots[currentSlide].classList.add('bg-amber-500');
+        }
+        
+        dots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                showSlide(parseInt(this.getAttribute('data-slide')));
+            });
+        });
+        
+        // Auto-advance testimonials
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 6000);
+        
+        // Show More Services
+        document.getElementById('show-more-services').addEventListener('click', function() {
+            const moreServices = document.getElementById('more-services');
+            moreServices.classList.toggle('hidden');
+            this.textContent = moreServices.classList.contains('hidden') ? 
+                'Load More Services' : 'Show Fewer Services';
+        });
+        
+        // Before/After Slider
+        document.querySelectorAll('.before-after-container').forEach(container => {
+            const slider = container.querySelector('.before-after-slider');
+            const handle = container.querySelector('.slider-handle');
+            let isDragging = false;
+            
+            function moveSlider(e) {
+                if (!isDragging) return;
+                
+                const containerRect = container.getBoundingClientRect();
+                let xPos = e.pageX - containerRect.left;
+                
+                // Boundary checking
+                xPos = Math.max(0, Math.min(xPos, containerRect.width));
+                
+                const percent = (xPos / containerRect.width) * 100;
+                slider.style.width = `${percent}%`;
+                handle.style.left = `${percent}%`;
+            }
+            
+            handle.addEventListener('mousedown', () => {
+                isDragging = true;
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+            
+            window.addEventListener('mousemove', moveSlider);
+            
+            // Touch support
+            handle.addEventListener('touchstart', () => {
+                isDragging = true;
+            });
+            
+            window.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+            
+            container.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                
+                const containerRect = container.getBoundingClientRect();
+                const touch = e.touches[0];
+                let xPos = touch.clientX - containerRect.left;
+                
+                // Boundary checking
+                xPos = Math.max(0, Math.min(xPos, containerRect.width));
+                
+                const percent = (xPos / containerRect.width) * 100;
+                slider.style.width = `${percent}%`;
+                handle.style.left = `${percent}%`;
+            }, { passive: false });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            if (anchor.getAttribute('class') && anchor.getAttribute('class').includes('scroll-smooth')) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - <a href="https://enzostvs-deepsite.hf.space?remix=mediamanmedia1/test-website-02" style="color: #fff;text-decoration: underline;" target="_blank" >🧬 Remix</a></p></body>
+</html>

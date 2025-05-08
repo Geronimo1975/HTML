@@ -1,0 +1,2 @@
+langchain-azure-ai
+python-dotenv
